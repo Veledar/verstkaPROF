@@ -115,6 +115,9 @@
   position: relative;
   margin-bottom: 3rem;
   text-align: center;
+  &__page {
+    background-color: $colorBackground;
+  }
   &:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
   }

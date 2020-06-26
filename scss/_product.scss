@@ -1,0 +1,47 @@
+.mainFilter {
+  display: flex;
+}
+.product-nav{
+  flex-direction: column;
+  padding-top: 5rem;
+  a{
+    display: none;
+  }
+  div {
+    .mainFilter__toggle {
+      border-left: $colorSite solid 4px;
+      border-bottom: $colorLine solid 1px;
+      width: 24.3rem;
+      min-height: 3.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+input[type=checkbox]#toggle-1, #toggle-2, #toggle-3 {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+input[type=checkbox]:checked ~ a.mainFilter__a1 {
+  display: flex;
+}
+input[type=checkbox]:checked ~ a.mainFilter__a2 {
+  display: flex;
+}
+input[type=checkbox]:checked ~ a.mainFilter__a3 {
+  display: flex;
+}
+
+.top .product__offerForWomenDetails{
+   padding-top: 9rem;
+   flex-direction: row;
+   .offerUnit {
+     background-position: top center;
+     padding: 7rem 3rem;
+     text-align: center;
+   }
+  .offerDetailsText {
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+ }
