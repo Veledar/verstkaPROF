@@ -301,8 +301,8 @@
         <div class="mainFilter center">
             <nav class="product-nav">
                 <div>
-                    <label class="mainFilter__toggle" for="toggle-1">Category</label>
-                    <input type="checkbox" id="toggle-1">
+                    <label class="mainFilter__toggle" for="toggle-1">Category <i class="fas fa-caret-down"></i></label>
+                    <input type="checkbox" id="toggle-1" class="toggle">
                     <a href="#" class="mainFilter__a1">Accessories</a>
                     <a href="#" class="mainFilter__a1">Bags</a>
                     <a href="#" class="mainFilter__a1">Denim</a>
@@ -318,7 +318,7 @@
                     <a href="#" class="mainFilter__a1">Tanks</a>
                 </div>
                 <div>
-                    <label class="mainFilter__toggle" for="toggle-2">BRAND</label>
+                    <label class="mainFilter__toggle" for="toggle-2">BRAND  <i class="fas fa-caret-down"></i></label>
                     <input type="checkbox" id="toggle-2">
                     <a href="#" class="mainFilter__a2">Accessories</a>
                     <a href="#" class="mainFilter__a2">Bags</a>
@@ -335,7 +335,7 @@
                     <a href="#" class="mainFilter__a2">Tanks</a>
                 </div>
                 <div>
-                    <label class="mainFilter__toggle" for="toggle-3">dESIGNER</label>
+                    <label class="mainFilter__toggle" for="toggle-3">dESIGNER  <i class="fas fa-caret-down"></i></label>
                     <input type="checkbox" id="toggle-3">
                     <a href="#" class="mainFilter__a3">Accessories</a>
                     <a href="#" class="mainFilter__a3">Bags</a>
@@ -352,73 +352,211 @@
                     <a href="#" class="mainFilter__a3">Tanks</a>
                 </div>
             </nav>
-            <div class="topFilter"></div>
-            <main class="product-box mainFilter__box">
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_1.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
+
+            <div class="topFilter row">
+                <div class="col-md-12">
+                    <div class="row productsParams">
+                        <div class="col-md-4">
+                            <div class="productsParamHead">Trending now</div>
+                            <div class="trendingParamsWrap">
+                                <span class="trendingParam">Bohemian</span>
+                                <span class="trendingDivider">|</span>
+                                <span class="trendingParam">Floral</span>
+                                <span class="trendingDivider">|</span>
+                                <span class="trendingParam">Lace</span>
+                                <span class="trendingParam">Floral</span>
+                                <span class="trendingDivider">|</span>
+                                <span class="trendingParam">Lace</span>
+                                <span class="trendingDivider">|</span>
+                                <span class="trendingParam">Bohemian</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="productsParamHead">Size</div>
+                            <div class="sizesWrap">
+                                <div>
+                                    <input id="xxs" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="xxs">XXS</label>
+                                </div>
+                                <div>
+                                    <input id="xs" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="xs">XS</label>
+                                </div>
+                                <div>
+                                    <input id="s" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="s">S</label>
+                                </div>
+                                <div>
+                                    <input id="m" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="m">M</label>
+                                </div>
+                                <div>
+                                    <input id="l" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="l">L</label>
+                                </div>
+                                <div>
+                                    <input id="xl" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="xl">XL</label>
+                                </div>
+                                <div>
+                                    <input id="xxl" type="checkbox" name="size">
+                                    <span class="productsCheckbox"></span>
+                                    <label for="xxl">XXL</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 priceParams">
+                            <div class="productsParamHead">Price</div>
+                            <img src="images/priceRange.svg" alt="">
+                            <div class="priceRangeValues">
+                                <span>$52</span>
+                                <span>$400</span>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_2.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_3.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_4.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_5.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_6.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_7.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-                <section class="product">
-                    <a href="#"><img class="product__img" src="img/Layer_8.png" alt="photo"></a>
-                    <div class="product__content">
-                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
-                        <p class="product__price">$52.00</p>
-                    </div>
-                    <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
-                </section>
-            </main>
+                    <form class="sorter">
+                        <div class="sorterUnit">
+                            <label for="sortBy">Sort By</label>
+                            <select name="" id="sortBy">
+                                <option value="">Name</option>
+                                <option value="">Price</option>
+                            </select>
+                        </div>
+
+                        <div class="sorterUnit">
+                            <label for="show">Show</label>
+                            <select name="" id="show">
+                                <option value="">09</option>
+                                <option value="">08</option>
+                                <option value="">07</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <main class="product-box mainFilter__box">
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_43.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_44.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_3.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_45.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_47.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_6.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_7.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_8.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_1.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_2.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_3.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                    <section class="product">
+                        <a href="#"><img class="product__img" src="img/Layer_4.png" alt="photo"></a>
+                        <div class="product__content">
+                            <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                            <p class="product__price">$52.00</p>
+                        </div>
+                        <a href="#" class="product__add"><img src="img/addToCart.png" alt="Корзина"> Add to Cart</a>
+                    </section>
+                </main>
+                <nav class="productsPagination">
+                    <a href="">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <span>
+                            <a href="">6</a>
+                            .....
+                            <a href="">20</a>
+                        </span>
+                    <a href="">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+                <button>View All</button>
+            </div>
         </div>
 
         <div class="offerForWomenDetails product__offerForWomenDetails center">

@@ -579,13 +579,32 @@ a.logo {
   flex-direction: column;
   padding-top: 5rem; }
   .product-nav a {
-    display: none; }
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    color: #838383 !important;
+    padding-left: 1.7rem; }
+    .product-nav a:hover {
+      color: #f38191 !important; }
   .product-nav div .mainFilter__toggle {
+    padding: 12px 0px 15px 16px;
     border-left: #f38191 solid 4px;
     border-bottom: #ececec solid 1px;
     width: 24.3rem;
     min-height: 3.4rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #838383; }
+    .product-nav div .mainFilter__toggle i {
+      float: right;
+      padding-right: 0.5rem; }
+    .product-nav div .mainFilter__toggle :focus-within {
+      color: #838383; }
 
 input[type=checkbox]#toggle-1, #toggle-2, #toggle-3 {
   position: absolute;
@@ -600,6 +619,101 @@ input[type=checkbox]:checked ~ a.mainFilter__a2 {
 
 input[type=checkbox]:checked ~ a.mainFilter__a3 {
   display: flex; }
+
+.topFilter {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+  .topFilter .trendingParamsWrap {
+    color: #6f6e6e;
+    font-size: 14px; }
+    .topFilter .trendingParamsWrap .trendingDivider {
+      color: #dfdfdf;
+      padding: 0 10px; }
+
+.productsParamHead {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px; }
+
+.trendingParamsWrap {
+  color: #6f6e6e;
+  font-size: 14px; }
+
+.trendingDivider {
+  color: #dfdfdf;
+  padding: 0 10px; }
+
+.sizesWrap {
+  overflow: hidden; }
+  .sizesWrap > div {
+    float: left;
+    width: 63px; }
+    .sizesWrap > div .productsCheckbox {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background: url(../images/checkbox.png) no-repeat; }
+    .sizesWrap > div input[type="checkbox"] {
+      display: none; }
+    .sizesWrap > div input[type="checkbox"]:checked + .productsCheckbox {
+      background: url(../images/checkbox.png) no-repeat, url(../images/check-solid.svg) no-repeat;
+      background-size: contain, 12px;
+      background-blend-mode: multiply; }
+    .sizesWrap > div label {
+      margin-bottom: auto;
+      cursor: pointer; }
+
+.priceParams img {
+  width: 100%; }
+.priceParams .priceRangeValues {
+  display: flex;
+  justify-content: space-between;
+  color: #6f6e6e;
+  font-size: 14px;
+  margin-top: 12px; }
+
+.sorter {
+  padding: 10px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-content: center;
+  margin-top: 40px; }
+  .sorter .sorterUnit {
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    background: #ffffff;
+    height: 30px;
+    display: flex; }
+    .sorter .sorterUnit:first-child {
+      margin-right: 10px; }
+    .sorter .sorterUnit label {
+      margin-bottom: auto;
+      border-right: 1px solid #ebebeb; }
+    .sorter .sorterUnit label,
+    .sorter .sorterUnit select {
+      color: #6f6e6e;
+      font-size: 14px;
+      font-weight: 400;
+      height: 100%;
+      line-height: 30px;
+      line-height: 27px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: block; }
+    .sorter .sorterUnit select {
+      border: none;
+      outline: none;
+      padding-bottom: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: url(../images/caret-down-solid.svg) no-repeat right 5px center;
+      background-size: 9px;
+      padding-right: 20px; }
 
 .top .product__offerForWomenDetails {
   padding-top: 9rem;
