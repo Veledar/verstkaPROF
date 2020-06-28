@@ -606,7 +606,7 @@ a.logo {
     .product-nav div .mainFilter__toggle :focus-within {
       color: #838383; }
 
-input[type=checkbox]#toggle-1, #toggle-2, #toggle-3 {
+input[type=checkbox]#toggle-1, #toggle-2, #toggle-3, #toggle-4, #toggle-5, #toggle-6 {
   position: absolute;
   top: -9999px;
   left: -9999px; }
@@ -725,6 +725,80 @@ input[type=checkbox]:checked ~ a.mainFilter__a3 {
   .top .product__offerForWomenDetails .offerDetailsText {
     padding-bottom: 4rem;
     text-align: center; }
+
+.checkout__toggle {
+  border: none !important;
+  width: 100% !important;
+  color: #222222 !important;
+  font-size: 16px !important; }
+
+.form {
+  display: flex;
+  padding-left: 5.5rem; }
+  .form__01, .form__02 {
+    display: flex;
+    flex-direction: column; }
+    .form__01 h2, .form__01 h3, .form__02 h2, .form__02 h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .form__01 p, .form__02 p {
+      color: #838383;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 30px; }
+  .form__01 :nth-child(3), .form__01 :nth-child(4) {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .form__01 :nth-child(6) {
+    margin-bottom: 3rem; }
+  .form__01 :nth-child(7) {
+    margin-bottom: 0; }
+  .form__01 :nth-child(9) input {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 2rem; }
+  .form__02 {
+    padding-left: 20rem; }
+    .form__02 span {
+      color: #ff0d0d;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px; }
+    .form__02 :nth-child(4) input, .form__02 :nth-child(6) input {
+      width: 390px;
+      height: 45px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff; }
+    .form__02 :nth-child(7) {
+      color: #ff0d0d;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px; }
+    .form__02 :nth-child(8) input {
+      width: 180px;
+      height: 50px;
+      border: 1px solid #eaeaea;
+      background-color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    .form__02 :nth-child(8) {
+      display: flex; }
+      .form__02 :nth-child(8) p {
+        padding-right: 3rem;
+        padding-top: 6rem;
+        margin-bottom: 6rem; }
+
+input[type=checkbox]:checked ~ .form {
+  display: none; }
 
 .slideBlock {
   height: 777px;
